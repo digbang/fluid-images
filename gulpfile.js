@@ -7,15 +7,26 @@ var cleanCSS = require('gulp-clean-css');
 var paths = {
     images: 'resources/images/**/*.{jpg,png,gif,svg}',
     sass: "resources/styles/**/*.scss",
-    dist_css: './dist/css',
-    dist_img: './dist/img'
+    dist: 'dist',
+    dist_css: 'dist/*.css',
+    docs_css: 'docs/css',
+    docs_img: 'docs/img'
 };
 
 //////////////////////////////
 // ASSETS
-gulp.task('img', function () {
+function copy() {
+    // Css to docs
+    gulp.src(paths.dist_css)
+        .pipe(gulp.dest(paths.docs_css));
+
+    // Img to docs
     gulp.src(paths.images)
-        .pipe(gulp.dest(paths.dist_img));
+        .pipe(gulp.dest(paths.docs_img));
+}
+
+gulp.task('copy', function () {
+    copy();
 });
 
 //////////////////////////////
@@ -25,10 +36,10 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass({sourceMap: true}).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(paths.dist_css));
+        .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('dev', ['sass', 'img']);
+gulp.task('dev', ['sass'], copy);
 
 gulp.task('watch', ['dev'], function () {
     gulp.watch(paths.sass, ['dev']);
@@ -42,10 +53,10 @@ gulp.task('min-sass', function(){
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename('fluid-images.min.css'))
         //.pipe(nano())
-        .pipe(gulp.dest(paths.dist_css));
+        .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('prod', ['min-sass', 'img']);
+gulp.task('prod', ['min-sass'], copy);
 
 //////////////////////////////
 // DEFAULT
