@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fixed height - Examples - Fluid image</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="../dist/css/fluid-images.min.css">
+        <!-- Twitter bootstrap 3 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style type="text/css">
+            .cover-example {
+                border: #eee solid 1px;
+                margin-bottom: 30px;
+            }
+            .cover-100 {
+                height: 100px;
+            }
+            .cover-200 {
+                height: 200px;
+            }
+            .cover-300 {
+                height: 300px;
+            }
+            .cover-400 {
+                height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <section>
+            <h1 class="page-header">Altura fija</h1>
+            <p class="lead"></p>
+        </section>
+        <section>
+            <h2>100px</h2>
+            <h3>Con Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;span class=&quot;fluid-image__bg&quot; style=&quot;background-image: url('your-image-url')&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif')"></span>
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg')"></span>
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3>Sin Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-100">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>200px</h2>
+            <h3>Con Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;span class=&quot;fluid-image__bg&quot; style=&quot;background-image: url('your-image-url')&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif')"></span>
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg')"></span>
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3>Sin Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-200">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>300px</h2>
+            <h3>Con Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;span class=&quot;fluid-image__bg&quot; style=&quot;background-image: url('your-image-url')&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif')"></span>
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg')"></span>
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3>Sin Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-300">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>400px</h2>
+            <h3>Con Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;span class=&quot;fluid-image__bg&quot; style=&quot;background-image: url('your-image-url')&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg')"></span>
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif')"></span>
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <span class="fluid-image__bg" style="background-image: url('https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg')"></span>
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3>Sin Blur de fondo</h3>
+<pre>
+<code class="language-html" data-lang="html">
+    &lt;a href=&quot;#&quot; class=&quot;fluid-image&quot;&gt;
+    &lt;img class=&quot;fluid-image__img&quot; src=&quot;your-image-url&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;</code>
+</pre>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/b/ba/The_Matrix_Online_Coverart.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://media.giphy.com/media/mSXSC0vivvygw/giphy.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="cover-example cover-400">
+                        <a href="#" class="fluid-image">
+                            <img class="fluid-image__img" src="https://gcdn.emol.cl/mitos-y-enigmas/files/2016/07/thematrix.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </body>
+</html>
