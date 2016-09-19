@@ -1,14 +1,16 @@
 {
   "name": "fluid-images",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.1.0",
+  "author": "Alejandro Riedel <ariedel@digbang.com>",
+  "license": "MIT",
   "devDependencies": {
-    "gulp-sourcemaps": "~1.6.0"
-  },
-  "dependencies": {
+    "gulp-sourcemaps": "~1.6.0",
     "gulp-sass": "~2.3.2",
     "sass-flex-mixin": "~1.0.3",
     "gulp-rename": "~1.2.2",
     "gulp-clean-css": "~2.0.12"
+  },
+  "dependencies": {
+
   }
 }
