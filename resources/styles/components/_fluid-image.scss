@@ -1,0 +1,38 @@
+.fluid-image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  &__ratio {
+    display: block;
+    width: 100%;
+    visibility: hidden;
+  }
+
+  &__bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: transparent no-repeat center center;
+    background-size: cover;
+    opacity: .4;
+    @include blur(5);
+    @include scale(1.2);
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    @include y-align(absolute);
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
