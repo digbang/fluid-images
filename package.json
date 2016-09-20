@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "author": "Alejandro Riedel <ariedel@digbang.com>",
   "license": "MIT",
+  "repository": "digbang/fluid-images",
   "devDependencies": {
-    "gulp-sourcemaps": "~1.6.0",
-    "gulp-sass": "~2.3.2",
-    "sass-flex-mixin": "~1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "~2.0.12",
     "gulp-rename": "~1.2.2",
-    "gulp-clean-css": "~2.0.12"
+    "gulp-sass": "~2.3.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "sass-flex-mixin": "~1.0.3"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
