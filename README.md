@@ -83,6 +83,18 @@ El paquete provee 4 imágenes con las proporciones más utilizadas normalmente:
 </a>
 ```
 
+Otra forma de utilizar esto sin necesidad de linkear una imagen es con el base64 de la misma. Por ejemplo, la de 1px x 1px sería:
+
+```
+<a href="#" class="fluid-image">
+    <img class="fluid-image__ratio" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAQSURBVHjaYvj//z8DQIABAAj8Av7bok0WAAAAAElFTkSuQmCC" alt="Square ratio">
+    <span class="fluid-image__bg" style="background-image: url('your-image-url')"></span>
+    <img class="fluid-image__img" src="your-image-url" alt="">
+</a>
+```
+
+Hay herramientas online para generar el base64 como [https://www.base64-image.de/](https://www.base64-image.de/).
+
 Ver [demos](https://digbang.github.io/fluid-images/scalable-height.html)
 
 ## Desarrollo:
