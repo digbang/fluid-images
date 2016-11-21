@@ -2,7 +2,6 @@
   display: block;
   position: relative;
   overflow: hidden;
-  height: 100%;
 
   &__ratio {
     display: block;
@@ -34,5 +33,9 @@
     left: 0;
     right: 0;
     z-index: 2;
+  }
+  
+  &--full-h {
+    height: 100%
   }
 }
