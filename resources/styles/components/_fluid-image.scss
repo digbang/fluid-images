@@ -1,7 +1,26 @@
 .fluid-image {
-  display: block;
   position: relative;
   overflow: hidden;
+
+  &__img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
   &__ratio {
     display: block;
@@ -10,28 +29,27 @@
   }
 
   &__bg {
-    display: block;
     position: absolute;
+    z-index: 1;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    left: 0;
     background: transparent no-repeat center center;
     background-size: cover;
-    opacity: .4;
-    @include blur(5);
-    @include scale(1.2);
+
+    &--blur {
+      opacity: $fluid-images-bg-opacity;
+      @include blur($fluid-images-bg-blur);
+      @include scale($fluid-images-bg-scale);
+    }
   }
 
-  &__img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-    @include y-align(absolute);
-    left: 0;
-    right: 0;
-    z-index: 2;
+  &--fullheight {
+    height: 100%;
+  }
+
+  &--flex {
+    @include flex(1);
   }
 }
