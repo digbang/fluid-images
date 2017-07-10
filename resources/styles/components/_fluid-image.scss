@@ -1,6 +1,7 @@
 .fluid-image {
   position: relative;
   overflow: hidden;
+  display: block;
 
   &__img-container {
     position: absolute;
