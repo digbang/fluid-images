@@ -1,4 +1,6 @@
-@import "../../node_modules/sass-flex-mixin/flex";
+@import "variables";
+
+@import "node_modules/sass-flex-mixin/flex";
 
 @import "mixins/blur";
 @import "mixins/transforms";
